@@ -1,0 +1,15 @@
+server:
+  port: 9856
+spring:
+  application:
+    name: feign-server
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8752/eureka/
+# 开启熔断器
+feign:
+  hystrix:
+    enabled: true

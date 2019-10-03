@@ -1,0 +1,12 @@
+server:
+  port: 9632
+spring:
+  application:
+    name: configuration-server
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/shared
+  profiles:
+    active: native

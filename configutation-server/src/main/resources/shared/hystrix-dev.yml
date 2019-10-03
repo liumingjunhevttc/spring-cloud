@@ -1,0 +1,17 @@
+server:
+  port: 9652
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8752/eureka/
+  instance:
+    prefer-ip-address: true
+feign:
+  hystrix:
+    enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "hystrix.stream"
+foo: sptring cloud version 0.001

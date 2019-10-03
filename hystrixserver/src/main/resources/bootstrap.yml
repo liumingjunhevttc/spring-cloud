@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: hystrix
+  profiles:
+    active: dev
+  cloud:
+    config:
+      uri: http://localhost:9632/
+      fail-fast: true

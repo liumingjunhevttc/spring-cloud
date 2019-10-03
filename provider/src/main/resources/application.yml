@@ -1,0 +1,10 @@
+server:
+  port: 9537
+eureka:
+  client:
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8752/eureka/
+spring:
+  application:
+    name: service-provider
